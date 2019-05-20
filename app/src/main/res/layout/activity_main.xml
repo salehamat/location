@@ -6,23 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/id_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Date"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="200dp" />
+    <!--<TextView-->
+    android:id="@+id/id_textview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Date"
+    android:textSize="30sp"
+    tools:layout_editor_absoluteX="174dp"
+    tools:layout_editor_absoluteY="200dp" />
+    <!---->
+
 
     <TextView
+        android:id="@+id/textView_loc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id2="@+id/id_textview"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="345dp"
         android:text="Location"
-        android:textSize="30sp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="486dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="220dp"
+        android:text="Button"
+        android:onClick="onButtonClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
